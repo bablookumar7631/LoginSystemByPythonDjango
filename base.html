@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Authentication-Login & SignUp{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    
+</head>
+<body>
+
+    {% block body %}
+
+    <div class="Home">
+        <h1 class="port">Welcome to My Portfolio website</h1>
+        <div class="mainHome">
+            <h2>Thank You For Visiting</h2>
+            <a href="https://bablookumar7631.github.io/Portfolio_BK/" target="_blank"><button id="baseview" class="btn-home" type="submit" value="Signup">Portfolio</button></a>
+
+            <a href="{% url 'logout' %}"><button class="btn-home" id="btn-logout" type="submit" value="Signup">Logout</button></a>
+        </div>
+        
+    </div>
+
+    {% endblock body %}
+</body>
+</html>
